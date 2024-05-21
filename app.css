@@ -376,7 +376,7 @@ main#carousel {
     width: 50%;
     height: 600px;
     display: flex;
-    margin-top: 50px;
+    margin-top: 80px;
     align-items: center;
     justify-content: center;
     /* overflow: hidden; */
@@ -482,11 +482,6 @@ input:nth-of-type(5):checked ~ main#carousel {
   }
 
 
-@media (max-width: 1400px) {
-    main#carousel{
-        perspective: 50px;
-    }
-  }
 
 @media (max-width: 790px) {
     nav .nav-bar .sidebarOpen{
@@ -545,5 +540,41 @@ input:nth-of-type(5):checked ~ main#carousel {
     .item{
         width: 400px;
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1400px) {
+    main#carousel{
+        perspective: 50px;
+    }
+  }
+
+@media (max-width: 400px) {
+    .item{
+        width: 300px;
+        height: 350px;
+    }
+    main#carousel{
+        width: 300px;
+        height: 500px;
+    }
+
+    .navLogo img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-bar{
+        padding: 0 1px;
+        margin: 1px
+    }
+
+    .cont a{
+        font-size: 10px;
+    }
+
+    .cont{
+        margin: 0;
+        padding: 0;
     }
 }
